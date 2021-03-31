@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    "header" 70px
+    "main" 1fr
+    "footer" 180px /
+    600px;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Header */
+header {
+  grid-area: header;
+  padding: 15px;
+  background-color: rgb(128, 48, 48);
+  color: white;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* Main */
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: 50px 1.5fr 50px 1fr;
+  overflow: scroll;
+  grid-gap: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+h2 {
+  margin: 10px;
+}
+
+/* Section 1 */
+main .section1 {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: initial;
+  font-size: 10px;
+  line-height: 1.5rem;
+  text-align: right;
+}
+
+main .section1 .text1 {
+  background-color: rgb(180, 238, 93);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  font-style: italic;
+  line-height: 1.3rem;
+}
+
+main .section1 .text2 {
+  background-color: rgb(180, 238, 93);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  font-style: italic;
+  line-height: 1.3rem;
+}
+main .section1 .text3 {
+  background-color: rgb(180, 238, 93);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  font-style: italic;
+  line-height: 1.3rem;
+}
+
+/* Section2 */
+
+main .section2 {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 0;
+}
+
+main .section2 .text4 {
+  background-color: rgb(203, 236, 236);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  font-style: italic;
+  line-height: 1.3rem;
+}
+
+main .section2 .text5 {
+  background-color: rgb(203, 236, 236);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  font-style: italic;
+  line-height: 1.3rem;
+}
+
+/* Footer */
+
+footer {
+  grid-area: footer;
+  background-color: rgb(128, 48, 48);
+  color: white;
+  padding: 10px;
+}
